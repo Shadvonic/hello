@@ -4,18 +4,18 @@ import Employee  from './components/employee'; // import to used employee compon
 
 function App() {
 
-  console.log('we are about to list employees');
   const showEmployees = true; 
   return (
     <div className="App">
-       { console.log('inside the return')}
+     
        
       { showEmployees ? 
   
+
       <> 
-       <Employee />
-       <Employee />
-       <Employee />
+       <Employee name="Marc" role="intern" />
+       <Employee name="Elena"/>
+       <Employee  name ="Caleb"/>
       </>
       
        : 
