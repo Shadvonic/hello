@@ -6,10 +6,10 @@ function Employee(props) {
          <p>{props.role ? props.role : "No role"}</p> 
          {props.role ? ( 
          
-         <p class="role">{props.role}</p>
+         <p className="role">{props.role}</p>
          ) : ( 
 
-         <p class="no role">No role</p> 
+         <p className="no role">No role</p> 
          )}  {/* use only if you want to display something different */ }
         </>
        
