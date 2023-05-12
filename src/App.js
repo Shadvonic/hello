@@ -8,7 +8,7 @@ function App() {
 
   const showEmployees = true; 
   return (
-    <div className="App bg-red-300">
+    <div className="App">
      
        
       { showEmployees ? (
@@ -17,9 +17,51 @@ function App() {
         console.log(e.target.value);
         setRole(e.target.value)
         }} />
-       <Employee name="Marc" role="intern" />
-       <Employee name="Elena" role={role}/>
-       <Employee  name ="Caleb"/>
+        <div className='flex flex-wrap justifly-center'>
+
+          <Employee
+           name="Marc" 
+            role="intern"
+            img="https://images.pexels.com/photos/834863/pexels-photo-834863.jpeg"
+           />
+
+          <Employee 
+          name="Elena" 
+          role={role}
+          img="https://images.pexels.com/photos/834863/pexels-photo-834863.jpeg"
+           />
+
+          <Employee 
+           name ="Caleb"
+           role={role}
+           img="https://images.pexels.com/photos/834863/pexels-photo-834863.jpeg"
+           />
+
+          <Employee 
+            name="Marc"
+            role="intern"
+            img="https://images.pexels.com/photos/834863/pexels-photo-834863.jpeg"
+             />
+
+          <Employee
+           name="Elena" 
+            role={role} 
+            img="https://images.pexels.com/photos/834863/pexels-photo-834863.jpeg"
+          />
+
+          <Employee 
+           name ="Caleb"
+           role={role}  
+            img="https://images.pexels.com/photos/834863/pexels-photo-834863.jpeg"
+          />
+          
+          <Employee 
+           name ="Caleb"
+           role={role} 
+           img="https://images.pexels.com/photos/834863/pexels-photo-834863.jpeg"
+           />
+        </div>
+     
       </>
       
     ): (
