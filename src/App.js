@@ -1,14 +1,13 @@
-
 import './App.css';
+import Employee  from './components/employee'; // import to used employee components 
+
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
+       <Employee />
         
-        <p>
-          Hello there!
-        </p>
         <a
           className="App-link"
           href="https://reactjs.org"
