@@ -3,20 +3,25 @@ import Employee  from './components/employee'; // import to used employee compon
 
 
 function App() {
+
+  console.log('we are about to list employees');
+  const showEmployees = true; 
   return (
     <div className="App">
-      <header className="App-header">
+       { console.log('inside the return')}
+       
+      { showEmployees ? 
+  
+      <> 
        <Employee />
-        
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+       <Employee />
+       <Employee />
+      </>
+      
+       : 
+       <p>You cannot see the employees</p>
+
+    }
     </div>
   );
 }
