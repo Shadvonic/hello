@@ -29,7 +29,7 @@ function App() {
         console.log(e.target.value);
         setRole(e.target.value)
         }} />
-        <div className='flex flex-wrap justifly-center'>
+        <div className='flex flex-wrap justify-center'>
 
           {employees.map((employee) => {
 
